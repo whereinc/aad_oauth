@@ -54,6 +54,10 @@ class RequestCode {
     await _webView.close();
   }
 
+  Future<void> webViewClose() async {
+    await _webView.close();
+  }
+
   Stream<String> get _onCode =>
       _onCodeStream ??= _onCodeListener.stream.asBroadcastStream();
 
